@@ -377,16 +377,14 @@
         </ul>
         </div>
         <div class="subscribe" >        
-            <h4 class="footer-title" for="email">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h4>
-            <form  action="">
-            <div class="input">
-            <input class="input-footer" type="email" name="email" placeholder="E-mail" id="email">
-            <button class="hero-button footer" type="submit">Подписаться 
-                <svg class="icon-send">
-                    <use  href="image/icon.svg#icon-send"></use>
-                </svg>
-            </button>
-            </div>
+            <p class="footer-title" for="email">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+            <form  class="form-footer">
+                <input class="input-footer" type="email" name="email" placeholder="E-mail" id="email">
+                <button class="hero-button footer" type="submit">Подписаться 
+                    <svg class="icon-send">
+                        <use  href="image/icon.svg#icon-send"></use>
+                    </svg>
+                </button>
         </form>
         </div>
     </div>      
@@ -401,41 +399,46 @@
             </button>
             <h5 class="title-modal">Оставьте свои данные, мы вам перезвоним</h5>
             <form class="form">
-                <div class="form-field">            
-                    <label   for="name">Имя</label>
-                    <input  class="form-input" type="text" name="name" id="name">
-                        <svg class="form-icon">
-                            <use href="image/icon.svg#icon-person"></use>
-                        </svg>
-                </div>
-                <div class="form-field">
-                    <label  for="tel">Телефон</label>
-                    <input  class="form-input" type="tel" name="tel" id="tel" placeholder=" " >
+                <div >
+                    <label class="form-field">
+                    <span>Имя</span>
+                    <input class="form-input" type="text" name="name">
                     <svg class="form-icon">
-                            <use href="image/icon.svg#icon-phone"></use>
+                        <use href="image/icon.svg#icon-person"></use>
                     </svg>
-                </div>    
-                <div class="form-field">
-                    <label   for="mail">Почта</label>
-                    <input class="form-input" type="email"  name="email" id="mail">
+                </label>
+                <label class="form-field">
+                    <span>Телефон</span>
+                    <input class="form-input" type="tel" name="tel">
                     <svg class="form-icon">
-                            <use href="image/icon.svg#icon-email"></use>
+                        <use href="image/icon.svg#icon-phone"></use>
                     </svg>
-                </div>
-                <div class="form-field">
-                    <label   for="comment">Комментарий</label>
-                    <textarea  name="comment" id="comment" placeholder="Введите текст"></textarea>
-                </div>
-                <label class="checkbox-label">
-                    <input class="checkbox" type="checkbox" name="approval" id="agree" >
+                </label>
+                <label class="form-field">
+                    <span>Почта</span>
+                    <input class="form-input" type="email" name="email">
+                    <svg class="form-icon">
+                        <use href="image/icon.svg#icon-email"></use>
+                    </svg>
+                </label>
+                <label class="form-field">
+                    <span>Комментарий</span>
+                    <textarea name="comment" placeholder="Введите текст"></textarea>
+                </label>
+                <label class="checkbox-field">
+                    <input class="checkbox" type="checkbox" name="approval">
                     <svg class="icon-checkbox">
                         <use href="image/icon.svg#icon-vector"></use>
                     </svg>
+                    <svg class="icon-check">
+                        <use href="image/icon.svg#icon-check"></use>
+                    </svg>
                     <span for="agree">Соглашаюсь с рассылкой и принимаю <a class="agreement" href="#">Условия договора</a></span>
                 </label>
-                <div>
-                    <button type="submit">Отправить</button>
-                </div>  
+            </div>
+                <!-- <div class="form-button"> -->
+                    <button class="hero-button" type="submit">Отправить</button>
+                <!-- </div>   -->
             </form>
         </div>
     </div>
